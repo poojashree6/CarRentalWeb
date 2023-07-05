@@ -1,9 +1,19 @@
 {
-  "posts": [
+  "rentcar": [
     {
       "id": 1,
       "title": "json-server",
       "author": "typicode"
+    },
+    {
+      "name": "",
+      "location": "",
+      "pick": "",
+      "return": "",
+      "email": "",
+      "password": "",
+      "radio": "",
+      "id": 2
     }
   ],
   "comments": [

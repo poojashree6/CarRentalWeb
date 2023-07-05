@@ -3,7 +3,7 @@
     <div class="row">
         <div class="col-md-6">
           <div class="card">
-            <form >
+            <form  [formGroup]="rentcarForm">
                 <div class="form-group mb-3">
                     <label for="name">Name</label>
                     <input type="text" formControlName="name" name="name" class="form-control" id="name"
@@ -12,7 +12,7 @@
                 </div>
                 <div class="form-group mb-3">
                     <label for="location">Location</label>
-                    <input type="text" formControlName="location" name="location" class="form-control" id="googleMap"
+                    <input type="text" formControlName="location" name="location" class="form-control" id="location"
                         aria-describedby="emailHelp" placeholder="Enter Location">
                    
                 </div>
@@ -31,7 +31,7 @@
                 <div class="form-group mb-3">
                     <label for="email">Email</label>
                     <input type="email" formControlName="email" name="eamil" class="form-control"
-                        id="subject" aria-describedby="emailHelp" placeholder="Enter Email">
+                        id="email" aria-describedby="emailHelp" placeholder="Enter Email">
                 
                 </div>
 
@@ -44,20 +44,20 @@
                 </div>
                 <label for="paymet">Payment Method</label>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">Phone Pay
+                    <input class="form-check-input" type="radio" value="phonepay" formControlName="radio" name="flexRadioDefault" id="flexRadioDefault1">Phone Pay
                   
                   </div>
                  
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >Gpay
+                    <input class="form-check-input" type="radio"  value="Gpay" formControlName="radio" name="flexRadioDefault" id="flexRadioDefault2" >Gpay
                    
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" > Debit-Card
+                    <input class="form-check-input" type="radio" value="Debit-card" formControlName="radio"  name="flexRadioDefault" id="flexRadioDefault2" > Debit-Card
                     
                   </div>
 
-                <button class="btn" >Submit</button>
+                <button class="btn"(click)=poststaff() >Submit</button>
             </form>
         </div>
         </div>
