@@ -1,65 +1,74 @@
-
 <div class="container-fluid mt-3">
     <div class="row">
         <div class="col-md-6">
-          <div class="card">
-            <form  [formGroup]="rentcarForm">
-                <div class="form-group mb-3">
-                    <label for="name">Name</label>
-                    <input type="text" formControlName="name" name="name" class="form-control" id="name"
-                        aria-describedby="emailHelp" placeholder="Enter Name">
-                   
-                </div>
-                <div class="form-group mb-3">
-                    <label for="location">Location</label>
-                    <input type="text" formControlName="location" name="location" class="form-control" id="location"
-                        aria-describedby="emailHelp" placeholder="Enter Location">
-                   
-                </div>
-                <div class="form-group mb-3">
-                    <label for="date">Pick-Up Date</label>
-                    <input type="date" formControlName="pick" name="pick" class="form-control" id="pick"
-                        aria-describedby="emailHelp" >
-             
-                </div>
-                <div class="form-group mb-3">
-                    <label for="date">Return Date</label>
-                    <input type="date" formControlName="return" name="return" class="form-control" id="return"
-                        aria-describedby="emailHelp" >
-             
-                </div>
-                <div class="form-group mb-3">
-                    <label for="email">Email</label>
-                    <input type="email" formControlName="email" name="eamil" class="form-control"
-                        id="email" aria-describedby="emailHelp" placeholder="Enter Email">
-                
-                </div>
+            <div class="card">
+                <form [formGroup]="rentcarForm">
+                    <div class="form-group mb-3">
+                        <label for="name">Name</label>
+                        <select formControlName="name" class="form-control" id="name"
+                        aria-describedby="emailHelp">
+                            <option value="TATA Nexon">TATA Nexon</option>
+                            <option value="Maruti Suzuki Dzire">Maruti Suzuki Dzire</option>
+                            <option value="Kia Seltos">Kia Seltos</option>
+                            <option value="Mahindra XUV300">Mahindra XUV300</option>
+                            <option value="Toyota Innova Crysta">Toyota Innova Crysta</option>
+                            <option value="2023 Tata Altroz">2023 Tata Altroz</option>
+                        </select>
+
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="location">Location</label>
+                        <input type="text" formControlName="location" name="location" class="form-control" id="location"
+                            aria-describedby="emailHelp" placeholder="Enter Location">
+
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="date">Pick-Up Date</label>
+                        <input type="date" formControlName="pick" name="pick" class="form-control" id="pick"
+                            aria-describedby="emailHelp">
+
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="date">Return Date</label>
+                        <input type="date" formControlName="return" name="return" class="form-control" id="return"
+                            aria-describedby="emailHelp">
+
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="email">Email</label>
+                        <input type="email" formControlName="email" name="eamil" class="form-control" id="email"
+                            aria-describedby="emailHelp" placeholder="Enter Email">
+
+                    </div>
 
 
-                <div class="form-group mb-3">
-                    <label for="number">Phone Number</label>
-                    <input type="number" formControlName="number" name="number" class="form-control"
-                        id="number" aria-describedby="emailHelp" placeholder="Enter Number">
-                  
-                </div>
-                <label for="paymet">Payment Method</label>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" value="phonepay" formControlName="radio" name="flexRadioDefault" id="flexRadioDefault1">Phone Pay
-                  
-                  </div>
-                 
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio"  value="Gpay" formControlName="radio" name="flexRadioDefault" id="flexRadioDefault2" >Gpay
-                   
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" value="Debit-card" formControlName="radio"  name="flexRadioDefault" id="flexRadioDefault2" > Debit-Card
-                    
-                  </div>
+                    <div class="form-group mb-3">
+                        <label for="number">Phone Number</label>
+                        <input type="text" formControlName="number" name="number" class="form-control" id="number"
+                            aria-describedby="emailHelp" placeholder="Enter Number">
 
-                <button class="btn"(click)=poststaff() >Submit</button>
-            </form>
+                    </div>
+                    <label for="paymet">Payment Method</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" value="phonepay" formControlName="radio"
+                            name="flexRadioDefault" id="flexRadioDefault1">Phone Pay
+
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" value="Gpay" formControlName="radio"
+                            name="flexRadioDefault" id="flexRadioDefault2">Gpay
+
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" value="Debit-card" formControlName="radio"
+                            name="flexRadioDefault" id="flexRadioDefault2"> Debit-Card
+
+                    </div>
+
+                    <button class="btn" (click)=poststaff() routerLink="/rentrecord">Submit</button>
+                </form>
+            </div>
         </div>
-        </div>
-       </div>
-       </div>
+    </div>
+</div>

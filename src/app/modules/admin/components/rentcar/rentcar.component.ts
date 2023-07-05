@@ -11,7 +11,7 @@ import { RentcarserviceService } from 'src/app/services/rentcarservice.service';
 export class RentcarComponent {
   rentcarForm!:FormGroup;
   rentcarModelObject:rentcarModel=new rentcarModel();
-  rentcarData!:rentcarModel[];
+  rentcarData!:any;
 
   constructor(private rentcarservice:RentcarserviceService, private formbuilder:FormBuilder){}
   ngOnInit(): void {
@@ -21,8 +21,8 @@ export class RentcarComponent {
     pick:[''],
     return:[''],
     email:[''],
-    password:[''],
-    radio:[''],
+    number:[''],
+    radio:['']
     
      
   })
@@ -40,7 +40,7 @@ poststaff() {
   this.rentcarModelObject.pick = this.rentcarForm.value.pick;
   this.rentcarModelObject.return = this.rentcarForm.value.return;
   this.rentcarModelObject.email = this.rentcarForm.value.email;
-  this.rentcarModelObject.password = this.rentcarForm.value.password;
+  this.rentcarModelObject.number = this.rentcarForm.value.number;
   this.rentcarModelObject.radio = this.rentcarForm.value.radio;
  
  

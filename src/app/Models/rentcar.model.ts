@@ -4,8 +4,8 @@ export class rentcarModel{
     location!:string;
     pick!:number;
     return!:number;
-    email!:number;
-    password!:string;
+    email!:string;
+    number!:number;
     radio!:string;
     
   }

@@ -1,18 +1,23 @@
 {
   "rentcar": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "name": "Mahindra XUV300",
+      "location": "bjp",
+      "pick": "2023-07-06",
+      "return": "2023-07-08",
+      "email": "kjgjskdg@gmail.com",
+      "number": "740820050",
+      "radio": "phonepay",
+      "id": 1
     },
     {
-      "name": "",
-      "location": "",
-      "pick": "",
-      "return": "",
-      "email": "",
-      "password": "",
-      "radio": "",
+      "name": "Maruti Suzuki Dzire",
+      "location": "bjp",
+      "pick": "2023-07-06",
+      "return": "2023-07-08",
+      "email": "bvjvjv@gmail.com",
+      "number": "696599008",
+      "radio": "Debit-card",
       "id": 2
     }
   ],

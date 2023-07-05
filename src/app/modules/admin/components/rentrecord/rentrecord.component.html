@@ -1,1 +1,26 @@
-<p>rentrecord works!</p>
+<table class="table">
+    <thead class="table-dark">
+      <tr>
+        <th>Id</th>
+        <th>Car Name</th>
+        <th>Location</th>
+        <th>Pick-Up Date</th>
+        <th>Return Date</th>
+        <th>Email</th>
+        <th>Ph. Number</th>
+        <th>Payment Method</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of rentcarData">
+        <td>{{data.id}}</td>
+        <td>{{data.name}}</td>
+        <td>{{data.location}}</td>
+        <td>{{data.pick}}</td>
+        <td>{{data.return}}</td>
+        <td>{{data.email}}</td>
+        <td>{{data.number}}</td>
+        <td>{{data.radio}}</td>
+      </tr>
+    </tbody>
+  </table>
