@@ -1,0 +1,29 @@
+.homeimg {
+
+    width: 50%;
+    height:35%; 
+    margin-top: 0px;
+    object-position:right;
+    margin-left:20%
+            
+}
+pre{
+    padding-left: 40px;
+}
+pre h1{
+    line-height:1.5;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 10px;
+    margin-top: 50px ;
+    overflow-x: hidden; 
+   
+    padding-top: 6%;
+    font-size: 60px;
+    font-weight: bold;
+}
+#first{
+    color: chocolate;
+}
+.homepage{
+    display: flex;
+}

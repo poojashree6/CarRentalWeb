@@ -18,11 +18,11 @@ label.logo {
 }
 
 nav ul {
+    display: flex;
     margin-right: 20px;
-    padding-left: 0%;
-
-    
+    padding-left: 0%;   
 }
+
 
 nav ul li {
     display: inline-block;
@@ -38,4 +38,10 @@ nav ul li a {
     border-radius: 3px;
     text-transform: uppercase;
     text-decoration: none;
+}
+nav ul li a:hover{
+    background-color:#6f05b6;
+    color:white;
+    box-shadow: 0 0 10px rgb(220, 180, 233);
+
 }

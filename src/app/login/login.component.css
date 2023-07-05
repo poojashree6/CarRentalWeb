@@ -1,0 +1,41 @@
+
+body{
+    background-color: #8f1414;
+}
+
+.social-links button{
+    color: blueviolet;
+    background-color: rgb(218, 197, 238);
+    border-radius: 50px;
+}
+
+.btn{
+    color: blueviolet;
+    background-color: rgb(218, 197, 238);
+}
+
+/* .container{
+   padding-top: 10%;
+   padding-left: 30%;
+   background-color: #3916a3;
+} */
+.card{
+    border:none;
+    width: 500px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+ color: white;
+    background: linear-gradient(90deg, rgb(116, 6, 111)0%, rgb(71, 8, 113)100%);
+}
+
+.card h1,h6{
+    color: #ffff; 
+}
+
+.fa-solid {
+    size: 20px;
+}
+

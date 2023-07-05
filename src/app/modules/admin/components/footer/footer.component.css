@@ -2,7 +2,7 @@
 .footer {
    background-image: linear-gradient(to right,rgb(244,128,32),rgb(240,117,15));;
     padding: 70px 0;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
     margin-top: 0;
@@ -16,6 +16,7 @@
 
 .footer-col ul {
     padding-left: 0;
+    list-style: none;
 }
 
 .footer-col h4 {
@@ -36,6 +37,7 @@
     height: 2px;
     box-sizing: border-box;
     width: 50px;
+   
 }
 
 .footer-col ul li:not(:last-child) {
@@ -52,6 +54,7 @@
     font-weight: 300;
     display: block;
     transition: all 0.3s ease;
+   
 }
 
 .footer-col ul li a:hover {
