@@ -19,6 +19,26 @@
       "number": "696599008",
       "radio": "Debit-card",
       "id": 2
+    },
+    {
+      "name": "2023 Tata Altroz",
+      "location": "Bang",
+      "pick": "2023-07-07",
+      "return": "2023-07-09",
+      "email": "doe12@gmail.com",
+      "number": "3966397455",
+      "radio": "phonepay",
+      "id": 3
+    },
+    {
+      "name": "Maruti Suzuki Dzire",
+      "location": "dh",
+      "pick": "2023-07-07",
+      "return": "2023-07-09",
+      "email": "bhdfh@gmail.com",
+      "number": "5477658686",
+      "radio": "Gpay",
+      "id": 4
     }
   ],
   "comments": [
