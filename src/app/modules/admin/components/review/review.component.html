@@ -1,0 +1,75 @@
+<div class="d-flex">
+    <button class="btn btn-primary mt-3 " data-bs-toggle="modal" data-bs-target="#exampleModal">Add Review</button>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div style="background-color:rgb(195, 142, 245);" class="modal-header">
+                <h5 style="color: black;" class="modal-title" id="exampleModalLabel">Add Your Review</h5>
+            </div>
+            <div class="modal-body">
+                <form [formGroup]="revForm">
+                    <div class="form-group mb-2">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" formControlName="name"
+                            placeholder="Enter your name">
+                    </div>
+                    <div class="form-group mb-2">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" formControlName="email"
+                            placeholder="Enter email">
+                    </div>
+                    <div class="form-group mb-2">
+                        <label for="review">Review</label>
+                        <input type="text" class="form-control" id="review" formControlName="review"
+                            placeholder="Your Feedback">
+                    </div>
+                    <div class="form-group mb-2">
+                        <label for="rate">Ratings</label>
+                        <input type="text" class="form-control" id="rate" formControlName="rating"
+                            placeholder="Enter rating">
+                    </div>
+                </form>
+            </div>
+            <div style="background-color: rgb(195, 142, 245);" class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                <button type="submit" (click)="postRevDetails()"
+                    class="btn btn-success">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="container-fluid mt-3">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Review</th>
+                <th scope="col">Ratings</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let row of data">
+                <td>{{row.name}}</td>
+                <td>{{row.email}}</td>
+                <td>{{row.review}}</td>
+                <td>{{row.rate}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div> -->
+ <div class="x">
+    <div class="review" *ngFor="let row of revData">
+      <div class="card ms-3 mb-2" style="width:300px ; height: 300px; border-style:dashed;">
+        <div class="card">
+            <div><h6 class="card-title">{{row.id}}</h6></div>
+          <div><h6 class="card-title">{{row.name}}</h6></div>
+          <div><h5 class="card-subtitle mb-2 text-body-secondary">{{row.email}}</h5></div>
+          <div><p class="card-text mb-5">{{row.review}}</p></div>
+           <div><p class="card-text mb-5"><i class="bi bi-star"></i>{{row.rate}}</p></div>
+  </div>
+</div>

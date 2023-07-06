@@ -11,6 +11,7 @@ import { ServicesComponent } from './components/services/services.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RentcarComponent } from './components/rentcar/rentcar.component';
 import { RentrecordComponent } from './components/rentrecord/rentrecord.component';
+import { ReviewComponent } from './components/review/review.component';
 
 
 
@@ -24,6 +25,7 @@ import { RentrecordComponent } from './components/rentrecord/rentrecord.componen
     ServicesComponent,
     RentcarComponent,
     RentrecordComponent,
+    ReviewComponent,
     
   ],
   imports: [

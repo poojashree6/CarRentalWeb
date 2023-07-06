@@ -21,11 +21,48 @@
       "id": 2
     }
   ],
-  "comments": [
+  "review": [
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "name": "suman",
+      "email": "suman@gmail.com",
+      "review": "good,fantastic experience with rental car,satisfied",
+      "rating": "5",
+      "id": 1
+    },
+    {
+      "name": "sanjana",
+      "email": "sanj@gmail.com",
+      "review": " 2023 BMW X1 Review: So Good, But So Un-BMW! What you see here is a brand-new third-generation of BMW’s most affordable SUV (or SAV), the X1. And with it BMW",
+      "rating": "5",
+      "id": 2
+    },
+    {
+      "name": "govind",
+      "email": "gg@gmail.com",
+      "review": "Mercedes-AMG E 53 Cabriolet Review: Three-Pointed Stardom This is the kind of car that tells the world you have arrived in life and not just at the venue. The Mercedes-AMG E 53",
+      "rating": "4",
+      "id": 3
+    },
+    {
+      "name": "pooja",
+      "email": "pooja@gmail.com",
+      "review": " 2023 Volvo XC40 B4 Mild-Hybrid Review: Can this Mild Mannered Swede Take the Fight to the Germans? Volvo’s baby XC40 is now equipped with mild-hybrid tech, but is it enough to make it relevant in a segment",
+      "rating": "3",
+      "id": 4
+    },
+    {
+      "name": "vani",
+      "email": "av:)@gmail.com",
+      "review": "Audi Q3 Sportback Review: Here's Why it's the Best Entry-Level Luxury SUV! The Audi Q3 Sportback is neither a proper SUV nor a real coupe. But, is that a good or bad thing? There are SUVs. ",
+      "rating": "5",
+      "id": 5
+    },
+    {
+      "name": "karthik",
+      "email": "karthik23@gmail.com",
+      "review": "As Skoda announced the 5-star rating received by their products, we got an opportunity to drive their cars at the",
+      "rating": "3",
+      "id": 6
     }
   ],
   "profile": {

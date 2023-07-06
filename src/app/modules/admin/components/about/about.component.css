@@ -1,0 +1,37 @@
+.heading{
+    padding-top: 20PX;
+    text-align: center;
+}
+.about-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 2rem;
+    align-items: center;
+    gap: 1 rem;
+    margin-top: 1 rem;
+}
+.about-text{
+    /* border: 1px  black; */
+    width:90%;
+    padding-right: 8px;
+    float: left;
+}
+.about-text span{
+    font-weight: 500;
+    color: orangered;
+    columns: var(--main-color);
+    text-transform: uppercase;
+}
+.about-text p{
+    margin: 0.5rem 0 1.4rem;
+}
+.about-text .btn{
+    padding: 10px 20px;
+    background: #474fa0;
+    color: #fff;
+    border-radius: 0.5rem;
+}
+.about-text .btn:hover{
+   
+    background: orange;
+}
