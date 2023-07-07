@@ -28,11 +28,13 @@ export class RentcarComponent {
   })
   this.getcar();    
 }
+
 getcar() {
   this.rentcarservice.getcar().subscribe(res => {
     this.rentcarData = res;
   })
 }
+
 poststaff() {
   console.log(this.rentcarForm.value);
   this.rentcarModelObject.name = this.rentcarForm.value.name;
@@ -44,7 +46,6 @@ poststaff() {
   this.rentcarModelObject.radio = this.rentcarForm.value.radio;
  
  
-  
   this.rentcarservice.postcar(this.rentcarModelObject)
     .subscribe(res => {
       console.log(res);

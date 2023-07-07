@@ -23,6 +23,7 @@ export class ReviewComponent implements OnInit{
       review:[''],
       rating:['']
     })
+    this.getRevDetails();
   }
 
   postRevDetails(){

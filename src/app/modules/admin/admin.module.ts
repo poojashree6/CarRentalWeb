@@ -12,6 +12,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RentcarComponent } from './components/rentcar/rentcar.component';
 import { RentrecordComponent } from './components/rentrecord/rentrecord.component';
 import { ReviewComponent } from './components/review/review.component';
+import { PaymentComponent } from './components/payment/payment.component';
 
 
 
@@ -26,6 +27,7 @@ import { ReviewComponent } from './components/review/review.component';
     RentcarComponent,
     RentrecordComponent,
     ReviewComponent,
+    PaymentComponent,
     
   ],
   imports: [

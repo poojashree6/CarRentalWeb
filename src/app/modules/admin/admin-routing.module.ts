@@ -7,18 +7,20 @@ import { ServicesComponent } from './components/services/services.component';
 import { RentcarComponent } from './components/rentcar/rentcar.component';
 import { ReviewComponent } from './components/review/review.component';
 import { RentrecordComponent } from './components/rentrecord/rentrecord.component';
+import { PaymentComponent } from './components/payment/payment.component';
 
 const routes: Routes = [
   {
     path: '', component: AdminDashboardComponent,
     children: [
+      { path: '', redirectTo: '/admin/home', pathMatch: 'full' },
       { path: 'home', component: HomeComponent },
       { path: 'about', component: AboutComponent },
       { path: 'services', component: ServicesComponent },
       {path:'review',component:ReviewComponent},
       {path: 'rentrecord', component:RentrecordComponent},
-      { path: '', redirectTo: '/admin/home', pathMatch: 'full' },
-      {path:'rentcar',component:RentcarComponent}
+      {path:'rentcar',component:RentcarComponent},
+      {path:'payment',component:PaymentComponent}
 
     ]
   }
